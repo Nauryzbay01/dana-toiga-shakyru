@@ -252,13 +252,14 @@
       <div class="container">
         <div class="order__wrapper">
           <p>Тойға келесіз бе?</p>
-          <form class="form" action="#" method="" enctype="">
+          <form class="form" action="#" name="submit-to-google-sheet">
             <div class="name-form">
               <input
                 class="order_input"
                 placeholder="Аты-жөніңізді жазыңыз"
                 type="text"
-                name="name"
+                name="Аты"
+                id="name"
                 required=""
               />
             </div>
@@ -267,7 +268,7 @@
               <input
                 type="radio"
                 id="contactChoice1"
-                name="contact"
+                name="Жауабы"
                 value="Келемін, бұйырса"
               />
               <label for="contactChoice1">Келемін, бұйырса</label>
@@ -276,7 +277,7 @@
               <input
                 type="radio"
                 id="contactChoice2"
-                name="contact"
+                name="Жауабы"
                 value="Өкінішке орай, келе алмаймын"
               />
               <label for="contactChoice2">Өкінішке орай, келе алмаймын</label>
@@ -285,7 +286,7 @@
               <input
                 type="radio"
                 id="contactChoice3"
-                name="contact"
+                name="Жауабы"
                 value="Жұбайыммен келемін"
               />
               <label for="contactChoice3">Жұбайыммен келемін</label>
@@ -430,5 +431,18 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzbOiau4r2BRERj5By1JfLNqv9Uoa-qI9sS-3SQnAHibWWGg7jwBmcCYpPq8N1qjh-n/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log(form);
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

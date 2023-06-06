@@ -30,7 +30,14 @@ $.fn.setCursorPosition = function (pos) {
 };
 
 let alertt = document.querySelector(".alert--fixed");
-
+let alertClose = document.querySelectorAll(".alert--close");
+for (let item of alertClose) {
+  item.addEventListener("click", function (event) {
+    alertt.classList.remove("alert--active");
+    alertt.classList.remove("alert--warning");
+    alertt.classList.remove("alert--error");
+  });
+}
 $(".way").waypoint({
   handler: function () {
     $(this.element).addClass("way--active");
