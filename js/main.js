@@ -44,10 +44,9 @@ $(".way").waypoint({
   },
   offset: "90%",
 });
-var audio = document.getElementById("audio");
+var audio = document.getElementById("player");
 var playPauseBTN = document.getElementById("playPauseBTN");
-var count = 0;
-
+let count = 0;
 function playPause() {
   if (count == 0) {
     count = 1;
@@ -79,3 +78,25 @@ function playPause() {
 //   autoplaySpeed:'5000'
 
 // });
+// window.onscroll = () => {
+//   if (window.pageYOffset > 50) {
+//     playPause();
+//   }
+// };
+// window.onload = function () {
+//   var audio = new Audio();
+//   audio.src = "../fonts/Қазыбек Құрайыш - Махаббат деген.mp3";
+//   audio.oncanplaythrough = (event) => {
+//     var playedPromise = audio.play();
+//     if (playedPromise) {
+//       playedPromise
+//         .catch((e) => {
+//           console.log(e);
+//           if (e.name === "NotAllowedError" || e.name === "NotSupportedError") {
+//             console.log(e.name);
+//           }
+//         })
+//         .then(() => {});
+//     }
+//   };
+// };

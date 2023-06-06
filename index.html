@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temirlan&Aitolkyn</title>
-    <link rel="icon" href="img/PNG/favicon.png" />
+    <!-- <link rel="icon" href="img/PNG/favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Cinzel:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    /> -->
+
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/Style.css" />
     <link rel="stylesheet" href="css/slick.css" />
@@ -17,9 +33,15 @@
         </div>
         <div class="audio">
           <div class="audio__wrapper">
-            <audio id="audio">
+            <!-- <iframe
+              src="silence.mp3"
+              allow="autoplay"
+              id="audio"
+              style="display: none"
+            ></iframe> -->
+            <audio id="player">
               <source
-                src="fonts/azybek-rajysh-mahabbat-degen_(muzzonas.ru).mp3"
+                src="fonts/Қазыбек Құрайыш - Махаббат деген.mp3"
                 type="audio/mpeg"
               />
             </audio>
@@ -39,189 +61,6 @@
         </div> -->
       </div>
     </section>
-    <!-- <section class="about section" id="about">
-      <div class="container">
-        <div class="about__wrapper">
-          <div class="about__info">
-            <div class="about__title section__title way">
-              <span class="way">Альмира</span>
-              <span class="way">Нурмагамбетова</span>
-            </div>
-            <div class="about__experience">
-              <div class="experience-info information way">
-                10 <br /><span>Лет опыта</span>
-              </div>
-              <div class="projects-info information way">
-                20+<br /><span>Проектов</span>
-              </div>
-              <div class="clients-info information way">
-                110 <br /><span>Довольных клиентов</span>
-              </div>
-            </div>
-            <div class="about__text way">
-              Профильное образование инженера-строителя и дизайнера-интерьера,
-              знание материалов и понимание, как найти качественного
-              производителя, дало мне показать свои умения. С другой стороны
-              дальнейшее развитие различных форм деятельности в значительной
-              степени обуславливает создание модели развития.
-            </div>
-          </div>
-          <div class="about__pic way">
-            <img src="img/PNG/almira.png" alt="" class="about__img way" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio section" id="portfolio">
-      <div class="container">
-        <div class="portfolio__title section__title">Портфолио</div>
-        <div class="portfolio__wrapper">
-          <div class="portfolio__left">
-            <div class="portfolio__left-items way">
-              <div class="portfolio__left-item way">
-                <div class="before-pic">
-                  <img src="img/PNG/before.png" alt="" class="before-img" />
-                </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="50"
-                  class="count"
-                />
-                <div class="after-pic">
-                  <img src="img/PNG/banner.png" alt="" class="after-img" />
-                </div>
-              </div>
-              <div class="portfolio__left-item way">
-                <div class="before-pic">
-                  <img src="img/PNG/before.png" alt="" class="before-img" />
-                </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="50"
-                  class="count"
-                />
-                <div class="after-pic">
-                  <img src="img/PNG/banner.png" alt="" class="after-img" />
-                </div>
-              </div>
-            </div>
-            <span class="num">1</span>
-          </div>
-          <div class="portfolio__right">
-            <div class="portfolio__information">
-              <div class="portfolio__right-title">Гостинная</div>
-              <div class="portfolio__right-information">
-                <div class="location"><span>Локация:</span>Нур-Султан</div>
-                <div class="option"><span>Параметры:</span>25 кв.м</div>
-                <div class="style"><span>Стиль:</span>Современный</div>
-              </div>
-              <div class="portfolio__right-text">
-                Гостиная по традиции считается местом приема гостей и проведения
-                досуга. Здесь можно создать тёплую атмосферу, отдохнуть в
-                компании, пригласить друзей и родственников.
-              </div>
-              <div class="portfolio__right-bottom">
-                <div class="right-bottom-text">
-                  *Подвигайте ползунок что-бы увидеть разницу
-                </div>
-                <div><img src="img/SVG/polz.svg" alt="" /></div>
-              </div>
-            </div>
-            <div class="portfolio__information">
-              <div class="portfolio__right-title">Кухня</div>
-              <div class="portfolio__right-information">
-                <div class="location"><span>Локация:</span>Нур-Султан</div>
-                <div class="option"><span>Параметры:</span>25 кв.м</div>
-                <div class="style"><span>Стиль:</span>Современный</div>
-              </div>
-              <div class="portfolio__right-text">
-                Гостиная по традиции считается местом приема гостей и проведения
-                досуга. Здесь можно создать тёплую атмосферу, отдохнуть в
-                компании, пригласить друзей и родственников.
-              </div>
-              <div class="portfolio__right-bottom">
-                <div class="right-bottom-text">
-                  *Подвигайте ползунок что-бы увидеть разницу
-                </div>
-                <div><img src="img/SVG/polz.svg" alt="" /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services section" id="services">
-      <div class="container">
-        <div class="services__wrapper">
-          <div class="services__title section__title way">
-            <span class="way">Услуги</span>
-          </div>
-          <div class="services__item way">
-            <div class="services__item-title">Планировочные решения</div>
-            <div class="services__item-text">
-              Значимость этих проблем настолько очевидна, что постоянное
-              информационно-пропагандистское обеспечение нашей деятельности
-              требуют от нас анализа форм развития. С другой стороны новая
-              модель организационной
-            </div>
-          </div>
-          <div class="services__item way">
-            <div class="services__item-title">3D визуализаця интерьера</div>
-            <div class="services__item-text">
-              Идейные соображения высшего порядка, а также консультация с
-              широким активом обеспечивает широкому кругу (специалистов) участие
-              в формировании соответствующий условий активизации.
-            </div>
-          </div>
-          <div class="services__item way">
-            <div class="services__item-title">
-              Авторское сопровождение проекта
-            </div>
-            <div class="services__item-text">
-              Значимость этих проблем настолько очевидна, что постоянное
-              информационно-пропагандистское обеспечение нашей деятельности
-              требуют от нас анализа форм развития. С другой стороны новая
-              модель организационной
-            </div>
-          </div>
-          <div class="services__item way">
-            <div class="services__item-title">Комплектация проекта</div>
-            <div class="services__item-text">
-              Не следует, однако забывать, что укрепление и развитие структуры
-              позволяет оценить значение дальнейших направлений развития.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contacts section" id="contacts">
-      <div class="container">
-        <div class="contacts__wrapper">
-          <div class="contacts__info">
-            <div class="contacts__title section__title">КОНТАКТЫ</div>
-            <div class="insta-text contacts__info-texts">
-              <span>Instagram:</span
-              ><a href="https://www.instagram.com/almira.designn"
-                >almira.designn</a
-              >
-            </div>
-            <div class="whatsapp-text contacts__info-texts">
-              <span>WhatsApp:</span
-              ><a href="https://api.whatsapp.com/send?phone=77018889557"
-                >+7 701 888 95 57
-              </a>
-            </div>
-          </div>
-          <div class="contacts__pic way">
-            <img src="img/jpg/contacts.jpg" alt="" class="contacts__img way" />
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section class="info section">
       <div class="container">
         <div class="info__wrapper">
@@ -242,7 +81,7 @@
           <h3 class="way">Нұрай мейраханасы</h3>
           <p class="way">Аягөз қаласы</p>
 
-          <div class="images">
+          <!-- <div class="images">
             <a
               class="way"
               href="https://www.instagram.com/nurai.resto_ayagoz/?igshid=MzRlODBiNWFlZA%3D%3D"
@@ -253,13 +92,17 @@
                 alt=""
               />
             </a>
-            <a class="way" href="#">
+            <a
+              class="way"
+              href="https://www.google.com/maps/place/XC9C%2BMV5+%D0%9D%D1%83%D1%80-%D0%90%D0%B9,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%90%D0%B1%D0%B0%D1%8F,+%D0%90%D1%8F%D0%B3%D0%BE%D0%B7+070000/@47.974677,80.4275536,13z/data=!4m6!3m5!1s0x428ef4fd4ce97a59:0xa4f3076f832b816e!8m2!3d47.9691352!4d80.4222335!16s%2Fg%2F1hc1nvxc8?hl=ru"
+              target="_blank"
+            >
               <img
                 src="https://thumb.tildacdn.com/tild6536-6138-4632-b037-386664333562/-/resize/848x/-/format/webp/2GIS_logosvg.png"
                 alt=""
               />
             </a>
-          </div>
+          </div> -->
 
           <div class="data-block way">
             <p class="way">Тойдың басталуына</p>

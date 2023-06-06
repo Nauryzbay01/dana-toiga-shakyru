@@ -45,8 +45,15 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "ClassicaOne";
+  src: local("ClassicaOne"), local("ClassicaOne"),
+    url("../fonts/ClassicaOne.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
-  font-family: "Montserrat";
+  font-family: "Cinzel", serif;
   font-size: 14px;
   background-color: #e7fbfe;
   color: #ffffff;
@@ -71,21 +78,25 @@ input[type="radio"] {
 .background-pic img {
   width: 100%;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 .background-pic {
   position: relative;
 }
 .info {
-  margin-top: 50px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
 }
 .info p {
   margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-size: 13px;
   text-transform: uppercase;
   transform: translate(20px, 0);
 }
 h2 {
-  font-family: "KZGoodVibes";
+  font-family: "ClassicaOne";
   font-size: 30px;
   color: #20abc7;
   margin-bottom: 30px;
@@ -114,7 +125,7 @@ p.shanyrak {
 }
 .audio {
   position: absolute;
-  bottom: 80px;
+  bottom: 150px;
   width: 60px;
   height: 60px;
   z-index: 10;
@@ -163,6 +174,7 @@ h3 {
   color: #20abc7;
   text-transform: uppercase;
   transform: translate(20px, 0);
+  font-weight: 400;
 }
 p.toi-ieleri {
   margin-bottom: 0;
@@ -178,6 +190,7 @@ h5 {
   transform: translate(20px, 0);
 }
 .button-sub {
+  font-family: "Cinzel", serif;
   color: #fff;
   border-radius: 16px;
   padding: 12px 20px;
@@ -230,11 +243,13 @@ h5 {
 .order__wrapper {
   width: 80%;
   margin: 0 auto;
+  font-family: "Montserrat";
 }
 .order__wrapper p {
   margin-bottom: 20px;
 }
 .form .order_input {
+  font-family: "Cinzel", serif;
   border: none;
   width: 100%;
   padding: 5px 0;
@@ -244,13 +259,13 @@ h5 {
   outline: none;
   font-weight: 300;
   letter-spacing: 1px;
-  opacity: 0.5;
+  opacity: 0.7;
   font-size: 13px;
   display: block;
   margin-bottom: 10px;
 }
 .order_input::placeholder {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 /* .background-pic::after {
   content: "";
@@ -262,17 +277,22 @@ h5 {
   z-index: 1;
   background: transparent;
   position: absolute;
-}
+} */
 .background-pic::before {
   content: "";
-  bottom: -100px;
-  height: 200px;
+  bottom: 0px;
+  height: 140px;
   width: 100%;
   left: 0;
-  z-index: 1;
-  background: #333333;
+  z-index: 2;
+  background: url(../img/rect.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-} */
+}
+.data-block {
+  margin-top: 50px;
+}
 .data-block p {
   margin-bottom: 10px;
   text-transform: none;
