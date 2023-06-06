@@ -282,6 +282,7 @@ h5 {
   font-size: 15px;
   display: block;
   margin-bottom: 10px;
+  border-radius: 0px;
 }
 .order_input::placeholder {
   opacity: 0.7;
