@@ -58,7 +58,7 @@ body {
   background-color: #e7fbfe;
   color: #ffffff;
   width: 100%;
-  color: #3d3d3d;
+  color: #6a6969;
   text-align: center;
 }
 
@@ -100,17 +100,18 @@ input[type="radio"] {
 }
 h2 {
   font-family: "KZGoodVibes";
-  font-size: 50px;
+  font-size: 60px;
   color: #20abc7;
   margin-bottom: 30px;
   transform: translate(20px, 0);
+  letter-spacing: 1px;
 }
 .info__wrapper {
   overflow: hidden;
 }
 .form div {
   text-align: start;
-  font-size: 13px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   margin-bottom: 5px;
@@ -120,8 +121,9 @@ h2 {
   margin-right: 5px;
 }
 p.shanyrak {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-transform: lowercase;
+  line-height: 1.6;
 }
 .background-images {
   position: relative;
@@ -183,6 +185,7 @@ h3 {
 }
 p.toi-ieleri {
   margin-bottom: 0;
+  text-transform: none;
 }
 h3.toi-ieleri {
   margin-bottom: 15px;
@@ -191,6 +194,7 @@ h5 {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 25px;
   transform: translate(20px, 0);
 }
@@ -265,7 +269,7 @@ h5 {
   font-weight: 300;
   letter-spacing: 1px;
   opacity: 0.7;
-  font-size: 13px;
+  font-size: 15px;
   display: block;
   margin-bottom: 10px;
 }
@@ -312,13 +316,16 @@ h5 {
   transform: none;
 }
 .data-names {
-  font-size: 13px;
+  font-size: 15px;
   justify-content: center;
   display: flex;
 }
 .data-names span {
   display: block;
-  width: 58px;
+  width: 68px;
+}
+p.toi-bast {
+  font-size: 18px;
 }
 .data-block {
   margin-bottom: 50px;
