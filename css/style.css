@@ -101,7 +101,7 @@ input[type="radio"] {
 }
 h2 {
   font-family: "KZGoodVibes";
-  font-size: 35px;
+  font-size: 40px;
   color: #20abc7;
   margin-bottom: 30px;
   transform: translate(20px, 0);
@@ -528,9 +528,12 @@ p.toi-bast {
     width: 400px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 424px) {
   .container {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 5px;
+  }
+  h2 {
+    font-size: 36px;
   }
 }
