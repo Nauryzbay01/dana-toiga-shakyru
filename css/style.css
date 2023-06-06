@@ -80,9 +80,12 @@ input[type="radio"] {
   width: 100%;
   position: relative;
   z-index: 1;
+  height: 92vh;
+  object-fit: cover;
 }
 .background-pic {
   position: relative;
+  overflow: hidden;
 }
 .info {
   margin-top: -60px;
@@ -133,12 +136,13 @@ p.shanyrak {
 }
 .background-images {
   position: relative;
+  overflow: hidden;
 }
 .audio {
   position: absolute;
   bottom: 150px;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   z-index: 10;
   right: 20px;
 }
@@ -163,13 +167,13 @@ p.shanyrak {
 .audio .play,
 .audio .stop {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  width: 50px;
-  height: 50px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
   transition: 0.2s ease;
-  left: 5px;
 }
 .audio .play.hidden {
   opacity: 0;
@@ -446,7 +450,7 @@ p.toi-bast {
 }
 
 .alert--active .active path {
-  fill: #373767;
+  fill: #20abc7;
 }
 
 .alert--warning .warning path {
@@ -499,20 +503,20 @@ p.toi-bast {
     width: 768px;
   }
   .alert--width {
-    width: 370px;
+    width: 320px;
   }
   .alert--content {
     padding: 25px;
   }
   .alert--img__item svg {
-    width: 75px;
-    height: 75px;
+    width: 45px;
+    height: 45px;
   }
   .alert-text {
     margin-top: 10px;
   }
   .alert--title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .alert--subtitle {
     font-size: 18px;
@@ -525,7 +529,7 @@ p.toi-bast {
 }
 @media screen and (max-width: 550px) {
   .container {
-    width: 400px;
+    width: 420px;
   }
 }
 @media screen and (max-width: 424px) {

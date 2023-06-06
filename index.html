@@ -179,7 +179,7 @@
               src="https://thumb.tildacdn.com/tild3738-6566-4435-b633-393939663134/-/resize/332x/-/format/webp/cameras_main.png"
               alt=""
             />
-            <a class="tn-atom" href="https://t.me/+AKjhdsyqos5hNDZi"
+            <a class="tn-atom" href="https://t.me/+aFlRXR_GGiE0Yzdi"
               >Тойдың фотолары</a
             >
           </div>
@@ -264,10 +264,10 @@
           </div>
         </div>
         <div class="alert-text box-size">
-          <div class="alert--title box-size">Заявка принята</div>
-          <div class="alert--subtitle box-size">
+          <div class="alert--title box-size">Жауап жіберілді</div>
+          <!-- <div class="alert--subtitle box-size">
             Мы свяжемся с вами в ближайшее время
-          </div>
+          </div> -->
         </div>
         <div class="alert--x alert--close box-size">
           <svg
@@ -313,8 +313,20 @@
         e.preventDefault();
         console.log(form);
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
+          .then((response) => {
+            let alertt = document.querySelector(".alert--fixed");
+            alertt.classList.remove("alert--warning");
+            alertt.classList.remove("alert--error");
+            alertt.classList.add("alert--active");
+          })
+          .catch((error) => {
+            let alertt = document.querySelector(".alert--fixed");
+            alertt.querySelector(".alert--title").innerHTML =
+              "Өкінішке орай жауап жіберілмеді, техникалық ақаулар!";
+            alertt.classList.remove("alert--active");
+            alertt.classList.remove("alert--warning");
+            alertt.classList.add("alert--error");
+          });
       });
     </script>
   </body>
