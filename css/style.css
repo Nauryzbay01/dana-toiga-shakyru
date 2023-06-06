@@ -141,8 +141,8 @@ p.shanyrak {
 .audio {
   position: absolute;
   bottom: 150px;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   z-index: 10;
   right: 20px;
 }
@@ -167,12 +167,12 @@ p.shanyrak {
 .audio .play,
 .audio .stop {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  width: 80px;
-  height: 80px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
   transition: 0.2s ease;
 }
 .audio .play.hidden {
