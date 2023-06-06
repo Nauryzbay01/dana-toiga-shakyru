@@ -12,8 +12,24 @@
   <body>
     <section class="header-bottom" id="lead">
       <div class="background-images">
-        <div class="background-pic way">
+        <div class="background-pic">
           <img src="img/header.gif" alt="" class="background-image way" />
+        </div>
+        <div class="audio">
+          <div class="audio__wrapper">
+            <audio id="audio">
+              <source
+                src="fonts/azybek-rajysh-mahabbat-degen_(muzzonas.ru).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+
+            <button id="playPauseBTN" onclick="playPause()">
+              <img class="text" src="img/text.png" alt="" />
+              <img class="play" src="img/play.png" alt="" />
+              <img class="stop hidden" src="img/stop.png" alt="" />
+            </button>
+          </div>
         </div>
         <!-- <div class="ssss">
           <img
@@ -209,25 +225,26 @@
     <section class="info section">
       <div class="container">
         <div class="info__wrapper">
-          <h5>
+          <h5 class="way">
             Құрметті ағайын-туыс,<br />
             құда-жекжат, дос-жараңдар!
           </h5>
-          <p>Сіздерді балаларымыз</p>
-          <h2>Темірлан мен Айтолқынның</h2>
-          <p class="shanyrak">
+          <p class="way">Сіздерді балаларымыз</p>
+          <h2 class="way">Темірлан мен Айтолқынның</h2>
+          <p class="shanyrak way">
             шаңырақ көтеру тойына арналған<br />салтанатты ақ
             дастарханымыздың<br />қадірлі қонағы болуға шақырамыз
           </p>
-          <p class="toi-ieleri">Той иелері:</p>
-          <h3 class="toi-ieleri">Ержан-Зульфия</h3>
-          <h3>29.07.2023 жыл</h3>
-          <p>Сағат 18:00</p>
-          <h3>Нұрай мейраханасы</h3>
-          <p>Аягөз қаласы</p>
+          <p class="toi-ieleri way">Той иелері:</p>
+          <h3 class="toi-ieleri way">Ержан-Зульфия</h3>
+          <h3 class="way">29.07.2023 жыл</h3>
+          <p class="way">Сағат 18:00</p>
+          <h3 class="way">Нұрай мейраханасы</h3>
+          <p class="way">Аягөз қаласы</p>
 
           <div class="images">
             <a
+              class="way"
               href="https://www.instagram.com/nurai.resto_ayagoz/?igshid=MzRlODBiNWFlZA%3D%3D"
               target="_blank"
             >
@@ -236,7 +253,7 @@
                 alt=""
               />
             </a>
-            <a href="#">
+            <a class="way" href="#">
               <img
                 src="https://thumb.tildacdn.com/tild6536-6138-4632-b037-386664333562/-/resize/848x/-/format/webp/2GIS_logosvg.png"
                 alt=""
@@ -244,7 +261,16 @@
             </a>
           </div>
 
-          <p>Тойдың басталуына</p>
+          <div class="data-block way">
+            <p class="way">Тойдың басталуына</p>
+            <script src="//megatimer.ru/get/f627e9d9928d01400fc37d544b031e3e.js"></script>
+            <div class="data-names">
+              <span>күн</span>
+              <span>сағат</span>
+              <span>минут</span>
+              <span>секунд</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -263,12 +289,16 @@
                 required=""
               />
             </div>
-
+            <div class="name-form">
+              <input class="order_input" placeholder="+7 (999) 999 99 99""
+              type="tel" name="Телефон" id="name" required="" />
+            </div>
             <div>
               <input
                 type="radio"
                 id="contactChoice1"
                 name="Жауабы"
+                required="required"
                 value="Келемін, бұйырса"
               />
               <label for="contactChoice1">Келемін, бұйырса</label>

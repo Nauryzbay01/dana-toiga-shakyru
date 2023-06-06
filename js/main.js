@@ -44,6 +44,30 @@ $(".way").waypoint({
   },
   offset: "90%",
 });
+var audio = document.getElementById("audio");
+var playPauseBTN = document.getElementById("playPauseBTN");
+var count = 0;
+
+function playPause() {
+  if (count == 0) {
+    count = 1;
+    audio.play();
+    playPauseBTN.querySelector(".play").classList.add("hidden");
+    playPauseBTN.querySelector(".stop").classList.remove("hidden");
+  } else {
+    count = 0;
+    audio.pause();
+    playPauseBTN.querySelector(".stop").classList.add("hidden");
+    playPauseBTN.querySelector(".play").classList.remove("hidden");
+  }
+}
+
+// function stop(){
+// 	playPause()
+// 	audio.pause();
+// 	audio.currentTime = 0;
+// 	playPauseBTN.innerHTML = "Play ►";
+// }
 
 // $('.background-images').slick({
 //   dots: true,

@@ -82,12 +82,17 @@ input[type="radio"] {
 .info p {
   margin-bottom: 20px;
   text-transform: uppercase;
+  transform: translate(20px, 0);
 }
 h2 {
   font-family: "KZGoodVibes";
   font-size: 30px;
   color: #20abc7;
   margin-bottom: 30px;
+  transform: translate(20px, 0);
+}
+.info__wrapper {
+  overflow: hidden;
 }
 .form div {
   text-align: start;
@@ -104,9 +109,60 @@ p.shanyrak {
   margin-bottom: 30px;
   text-transform: lowercase;
 }
+.background-images {
+  position: relative;
+}
+.audio {
+  position: absolute;
+  bottom: 80px;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  right: 20px;
+}
+.audio__wrapper {
+  position: relative;
+}
+.audio .text {
+  width: 100%;
+  animation: animRotate 10s linear infinite;
+}
+
+@keyframes animRotate {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.audio .play,
+.audio .stop {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: 50px;
+  height: 50px;
+  transition: 0.2s ease;
+  left: 5px;
+}
+.audio .play.hidden {
+  opacity: 0;
+}
+#playPauseBTN {
+  border: none;
+  background-color: transparent;
+}
+.audio .stop.hidden {
+  opacity: 0;
+}
 h3 {
   color: #20abc7;
   text-transform: uppercase;
+  transform: translate(20px, 0);
 }
 p.toi-ieleri {
   margin-bottom: 0;
@@ -119,6 +175,7 @@ h5 {
   font-weight: 400;
   text-align: center;
   margin-bottom: 25px;
+  transform: translate(20px, 0);
 }
 .button-sub {
   color: #fff;
@@ -216,6 +273,31 @@ h5 {
   background: #333333;
   position: absolute;
 } */
+.data-block p {
+  margin-bottom: 10px;
+  text-transform: none;
+}
+.way {
+  opacity: 0;
+  transition-delay: 0.3s;
+  transition: linear 0.3s;
+}
+.way.way--active {
+  opacity: 1;
+  transform: none;
+}
+.data-names {
+  font-size: 11px;
+  justify-content: center;
+  display: flex;
+}
+.data-names span {
+  display: block;
+  width: 58px;
+}
+.data-block {
+  margin-bottom: 50px;
+}
 .ssss {
   position: relative;
   height: 200px;
