@@ -100,3 +100,14 @@ function playPause() {
 //     }
 //   };
 // };
+const func = () => {
+  var alll = 5;
+};
+func();
+alll = 3;
+console.log(alll);
+
+
+
+
+
