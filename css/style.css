@@ -67,7 +67,7 @@ body {
   /* background-color: #f6eceb; */
   color: #605752;
   width: 100%;
-
+  /* max-width: 500px; */
   text-align: center;
 }
 
@@ -238,7 +238,7 @@ h2 {
 h2 span {
   /* font-family: "Great Vibes", serif; */
 
-  font-size: 40px;
+  font-size: 47px;
 }
 h5 span {
   font-family: "ClassicaOne";
