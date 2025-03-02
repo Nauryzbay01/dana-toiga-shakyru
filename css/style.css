@@ -121,7 +121,7 @@ input[type="radio"] {
 .bg-pic.big {
   margin-top: 0;
   height: 360px;
-  background: url(../img/flowers.jpeg);
+  background: url(../img/bg.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
